@@ -384,11 +384,14 @@ p {
 /* Mixins Patterns */
 /* Box Shadow with Browser Compatibility */
 /* Colored Top Border */
+/* Extra Small Only */
+/* Small Devices, Tablets */
+/* Medium and Greater Devices */
 /* Layout Imports */
 /* Layout Styles */
 .container {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
   margin-left: auto;
   margin-right: auto; }
 
@@ -396,10 +399,13 @@ p {
 /* Card Styles */
 .card {
   background-color: #FFF;
-  height: 200px;
+  height: 12.500em;
   margin-bottom: 25px;
-  padding: 25px 20px 25px 20px;
+  padding: 25px 1.25em 25px 1.25em;
   border-radius: 8px;
+  max-width: 21.875em;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-shadow: 6px 15px 24px -4px rgba(163, 165, 174, 0.75);
   -moz-box-shadow: 6px 15px 24px -4px rgba(163, 165, 174, 0.75);
   box-shadow: 6px 15px 24px -4px rgba(163, 165, 174, 0.75);
@@ -419,11 +425,29 @@ p {
     bottom: 25px;
     right: 25px; }
 
+/* Card Style to Medium and Greater Devices */
+@media only screen and (min-width: 62em) {
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-items: center; }
+  .card-middle {
+    flex-direction: column;
+    margin-right: 25px;
+    margin-left: 25px; }
+  .card-first {
+    align-self: center;
+    float: left; }
+  .card-last {
+    align-self: center;
+    float: right; } }
+
 /* Header Styles */
 .header {
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 5.000em;
+  padding-bottom: 5.000em;
+  max-width: 31.250em; }
   .header [class^='title-'] {
     margin-top: 0px;
     margin-bottom: 0px;
