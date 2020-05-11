@@ -1,0 +1,13 @@
+/* Mixins Patterns */
+
+/* Box Shadow with Browser Compatibility */
+@mixin boxShadow() {
+    -webkit-box-shadow: 6px 15px 24px -4px rgba(163,165,174,0.75);
+    -moz-box-shadow: 6px 15px 24px -4px rgba(163,165,174,0.75);
+    box-shadow: 6px 15px 24px -4px rgba(163,165,174,0.75);
+}
+
+/* Colored Top Border */
+@mixin boxBorderColor($color) {
+    border-top: 4px solid $color;
+}

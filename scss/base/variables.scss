@@ -1,0 +1,15 @@
+/* Base Colors */
+$red: hsl(0, 78%, 62%) !default;
+$cyan: hsl(180, 62%, 55%) !default;
+$orange: hsl(34, 97%, 64%) !default;
+$blue: hsl(212, 86%, 64%) !default;
+$dark-blue: hsl(234, 12%, 34%) !default;
+$grayish-blue: hsl(229, 6%, 66%) !default;
+$light-gray: hsl(0, 0%, 98%) !default;
+$white: #FFF !default;
+
+/* Base Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+$thin: 200 !default;
+$regular: 400 !default;
+$bold: 600 !default;

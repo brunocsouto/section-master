@@ -1,0 +1,32 @@
+$gutter: 25px;
+
+/* Card Styles */
+.card {
+    background-color: $white;
+    height: 200px;
+    margin-bottom: $gutter;
+    padding: $gutter 20px $gutter 20px;
+    border-radius: 8px;
+    @include boxShadow();
+    .card-header {
+        color: $dark-blue;
+    }
+    &.card-cyan {
+        @include boxBorderColor($cyan);
+    }
+    &.card-red {
+        @include boxBorderColor($red);
+    }
+    &.card-orange {
+        @include boxBorderColor($orange);
+    }
+    &.card-blue {
+        @include boxBorderColor($blue);
+    }
+    position: relative;
+    & > img {
+        position: absolute;
+        bottom: $gutter;
+        right: $gutter;
+    }
+}

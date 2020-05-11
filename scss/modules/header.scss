@@ -1,0 +1,21 @@
+/* Header Styles */
+.header {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    [class^='title-'] {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: $dark-blue;
+    }
+    .title-thin {
+        font-weight: $thin;
+    }
+    .title-bold {
+        font-weight: $bold;
+    }
+    .header-description {
+        font-weight: $regular;
+
+    }
+}
